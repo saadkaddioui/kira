@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166817195-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+    gtag('config', 'UA-166817195-1');
+   </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MeetMe - Kira</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <img id="lora" src="assets/img/gallery/LORAWAN2.png"/>
+    <h1>Lorawan Network Deployement</h1>
+  </head>
+
+  <body>
+
+        <!-- Header Area wrapper Starts -->
+        <header id="header-wrap">
+          <!-- Navbar Start -->
+          <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="icon-menu"></span>
+                  <span class="icon-menu"></span>
+                  <span class="icon-menu"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html#hero-area">
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">
+                      About
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#services">
+                      Skills
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#resume">
+                      Resume
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#portfolios">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Mobile Menu Start -->
+            <ul class="onepage-nev mobile-menu">
+              <li>
+                <a href="index.html#home">Home</a>
+              </li>
+              <li>
+                <a href="index.html#about">about</a>
+              </li>
+              <li>
+                <a href="index.html#services">Services</a>
+              </li>
+              <li>
+                <a href="index.html#resume">resume</a>
+              </li>
+              <li>
+                <a href="index.html#portfolio">Work</a>
+              </li>
+              <li>
+                <a href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- Mobile Menu End -->
+          </nav>
+          <!-- Navbar End -->
+
+        </header>
+
+
+    <br/><br/>
+      <div id="menu">
+    <h2 id="menuTi">Content:</h2>
+      <ul>
+        <li><a href="#PP">Project Presentation</a></li>
+        <li><a href="#PD">Project development</a>
+          <ul>
+            <li><a href="#hw">Hardware used</a></li>
+            <li><a href="#sw">Installation and configuration</a></li>
+            <ul>
+              <li><a href="#gw">Gateway and packet forwarder</a></li>
+              <li><a href="#lns">LoRaWan Network Server</a></li>
+            </ul>
+          </ul>
+          </li>
+      </ul>
+  </div>
+  <div id="body">
+    <h2 id="PP">Project presentation</h2>
+    <p>In order to conclude my engineering studies at the national school of advanced systems and network, ESISAR, I have realized a five-month internship at ATOS Worldgrid.</br>
+       In an internet of things and Edge computing environment, the team I had the pleasure of being part of starting the second of March until the 31 of July,
+       works on an innovative solution called Atos Codex Smart Edge, that takes the notion of Industrial supervision to a higher level, integrating predictive analysis
+       and Edge & Swarm computing, the product allows a full-chain management and supervision, from the lowest level of sensors till the data processing on the cloud. </br></br>
+
+       My internship came to further enrich this solution and test one of the Edge servers Atos created in 2019, the BullSequana Edge, with a LoRaWAN module.
+       The goal was setting up a LoraWan Network for temperature transmission, going through the study of the Lora network and its component, finding the corresponding lorawan network server,
+       installing it on the BullSequana, then making it into as Rancher module on the platform of Codex Smart Edge.</br></br>
+       This project contains two parts:
+       The first one is the deployement of the network on a raspberry pi and the second part is the deployment on a more advanced hardware <a href="https://atos.net/fr/solutions/bullsequana-edge-fr"> BullSequana Edge</a>.
+    </p>
+
+     <h2 id="PD">Project development</h2>
+
+      <h3 id="hw" style="font-size:30px;">Hardware used</h3>
+         <h4 style="font-size:20px;">First part of the project</h4>
+           <table id="firstHW">
+              <tr>
+                <th>1Gate ATIM: Rasperry Pi 3 and Lora concentrator(SX1308 and SX1257 chips)</th>
+                <th><img id="gate" src="assets/img/gallery/1gate.jpg"/></th>
+              </tr>
+              <tr>
+                <th> Temperature sensor ACW-TH/W8</th>
+                <th><img id="sensor "src="assets/img/gallery/sensor.jpg"/></th>
+            </tr>
+            <tr>
+              <th> Ethernet cable</th>
+            </tr>
+            <tr>
+              <th> Keyboard</th>
+            </tr>
+            <tr>
+              <th>Screen</th>
+            </tr>
+         </table>
+        <h4 style="font-size:20px;">Second part of the project</h4>
+        <ul>
+          <li>BullSequana Edge: Lora concentrator(SX1308/SX1301 and SX125x chips)</li>
+          <li>Laptop</li>
+          <li>Temperature sensor ACW-TH/W8</li>
+        <ul>
+
+      <h3 id="sw" style="font-size:30px;">Installation and Configuration</h3>
+      The OS used in both of the installations is Debian 10, there are no specific prerequesties.
+      <h4 id="lns" style="font-size:20px;">LoraWan Server</h4>
+      The LoraWan Network Server (LNS) used for this project is <a href="https://github.com/gotthardp/lorawan-server">Gotthardp's</a> programmed in Erlang.
+      The installation instructions are detailed in the documentation in the .
+
+
+        <h4 style="font-size:20px;">Gateway and packet forwarder</h4>
+            For the Gateway part of the network, we need to install a driver for the Lora concentrator and the packet forwarder linking the server to the gateway.
+            The software used is the following:
+            <h5>First part of the project</h5>
+          <ul>
+             <li><a href="https://github.com/Lora-net/lora_gateway">Semtech driver</a></li>
+            <li><a href="https://github.com/Lora-net/packet_forwarder">Semtech packet forwarder</a></li>
+          </ul><br>
+
+          First we need to enable the SPI interface on the RasperryPI using the following command:
+          <div id="cmd">Sudo raspi-config </div> to access the configuration menu then navigate to <div id="cmd"> Interfacing options>SPI> enable:YES </div>
+          then reboot the raspberry:
+          <div id="cmd">reboot</div>
+          Install the packet Semtech driver:
+          <div id="cmd">git clone https://github.com/Lora-net/lora_gateway </div>
+          Connect the driver to the Reset Pin Control (usually 25):
+          <div id="cmd"> cd lora_gateway <br> ./reset_lgw.sh start 25 <br></div>
+          then test that it's corretly installed:
+          <div id="cmd">./util_tx_test -r 1257 -f 867.9</div>
+          Once the test is successful, make sure to stop it and move to installation of the packet forwarder:
+          <div id="cmd">git clone https://github.com/Lora-net/packet_forwarder </div>
+          Update the local_conf.json file with the gateway's ID:
+          <div id="cmd">./update_gwid.sh local_conf.json</div>
+          Then update the global_conf.json fil with the serevr's adress and the UDP ports:
+          <div id="cmd">nano global_conf.json</div><br>
+          <img id="gate" src="assets/img/global_conf.png"/><br><br>
+          Launch the packet forwarder to test it:
+          <div id="cmd">./lora_pkt_fwd/lora_pkt_fwd</div>
+
+           <h5>Second part of the project</h5>
+            <ul>
+             <li> <a href="https://github.com/Lora-net/picoGW_hal">The gateway driver</a></li>
+              <li> <a href="https://github.com/Lora-net/picoGW_packet_forwarder">The packet forwarder</a></li>
+            </ul>
+          </div>
+          <!-- Footer Section Start -->
+          <footer class="footer-area section-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                    <ul class="social-icon">
+                      <li>
+                        <a class="linkedin" href="https://www.linkedin.com/in/hasna-malek/"><i class="icon-social-linkedin"></i></a>
+                      </li>
+                      <li>
+                        <a class="github" href="https://github.com/HMMalek"><i class="icon-social-github"></i></a>
+                      </li>
+                    </ul>
+                    <p>Copyright © 2018 UIdeck All Right Reserved</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer Section End -->
+
+          <!-- Go to Top Link -->
+          <a href="#" class="back-to-top">
+            <i class="icon-arrow-up"></i>
+          </a>
+
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="assets/js/jquery-min.js"></script>
+          <script src="assets/js/popper.min.js"></script>
+          <script src="assets/js/bootstrap.min.js"></script>
+          <script src="assets/js/jquery.mixitup.js"></script>
+          <script src="assets/js/jquery.counterup.min.js"></script>
+          <script src="assets/js/waypoints.min.js"></script>
+          <script src="assets/js/wow.js"></script>
+          <script src="assets/js/jquery.nav.js"></script>
+          <script src="assets/js/jquery.easing.min.js"></script>
+          <script src="assets/js/nivo-lightbox.js"></script>
+          <script src="assets/js/jquery.slicknav.js"></script>
+          <script src="assets/js/main.js"></script>
+          <script src="assets/js/form-validator.min.js"></script>
+          <script src="assets/js/contact-form-script.min.js"></script>
+          <script src="assets/js/map.js"></script>
+
+
+  </body>
+</html>
