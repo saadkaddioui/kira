@@ -139,7 +139,21 @@
 
     </header>
     <!-- Header Area wrapper End -->
+<!--Timer-->
+<div class="timer">
+  <p id="demo"></p>
 
+<script>
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+ </div>
+
+ <!--timer-->
     <!-- About Section Start -->
     <section id="about" class="section-padding">
       <div class="container">
