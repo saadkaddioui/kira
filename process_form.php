@@ -1,26 +1,21 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = isset($_POST['name']) ? $_POST['name'] : "";
-    $email = isset($_POST['email']) ? $_POST['email'] : "";
-    $subject = isset($_POST['subject']) ? $_POST['subject'] : "";
-    $message = isset($_POST['message']) ? $_POST['message'] : "";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
-    // Validation (simple example)
-    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-        echo "Please fill all required fields.";
+    $to = 'saadkaddioui6@email.com'; // where you want to receive the emails
+    $headers = "From: " . $email;
+    $body = "You have received a new message from $name.\n\n" . $message;
+
+    // Send email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully!";
     } else {
-        // Process your form data here (e.g., send an email, save to database)
-        echo "Name: $name<br>";
-        echo "Email: $email<br>";
-        echo "Subject: $subject<br>";
-        echo "Message: $message";
-        // Implement email sending functionality or database storage here
+        echo "Failed to send the message.";
     }
-}
-else {
-    echo "Form not submitted";
 }
 
 ?>
-
